@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --SoftBlue: hsl(215, 51%, 70%);
+    --Cyana: hsla(178, 100%, 50%, 0.5);
+    --Cyan: hsl(178, 100%, 50%);
+    --VeryDarkBlueMain: hsl(217, 54%, 11%);
+    --VeryDarkBlueCard: hsl(216, 50%, 16%);
+    --VeryDarkBlueLine: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--VeryDarkBlueMain);
+    font-size: 18px;
+}
+.main-container{
+    width: 300px;
+    height: 526px;
+    margin: 60px auto;
+    border-radius: 16px;
+    padding: 26px;
+    background-color: var(--VeryDarkBlueCard);
+}
+.image{
+    margin: 0 auto;
+    background-image: url(./images/image-equilibrium.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    margin-bottom: 26px;
+    overflow: hidden;
+}
+.eye-image{
+    opacity: 0;
+    background-color: var(--Cyana);
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+.eye-image:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+h1{
+    color: var(--White);
+    font-size: 1.3em;
+    margin-bottom: 18px;
+}
+.title:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+.description{
+    font-size: 0.9em;
+    color: var(--SoftBlue);
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.details-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+.value{
+    color: var(--Cyan);
+}
+.time{
+    color: var(--SoftBlue);
+}
+.line{
+    border-top: 1px solid var(--SoftBlue);
+    margin-bottom: 15px;
+}
+.creator-container{
+    display: flex;
+    align-items: center;
+}
+.photo{
+    background-image: url(./images/image-avatar.png);
+    width: 36px;
+    height: 36px;
+    background-size: cover;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+.creator{
+    color: var(--SoftBlue);
+    font-size: 0.85em;
+    margin-left: 15px;
+}
+.creator span{
+    color: var(--White);
+}
+.creator span:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--White);
+}
+.attribution a {
+    color: hsl(180, 71%, 58%);
+}
+/*-----------------Desktop-------------------*/
+@media (min-width: 1440px){
+    .main-container{
+        width: 354px;
+        height: 600px;
+    }
+    .image{
+        width: 350px;
+        height: 350px;
+    }
+    .description{
+        font-size: 1em;
+    }
+}
